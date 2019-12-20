@@ -1,0 +1,225 @@
+<!--Author : Ziasy Consulting-->
+<!--Moderator : Ankit Choudhary-->
+<!--Last Updated : 16-12-2019-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    
+    <title>Insert New Record</title>
+
+    <style>
+        #header{
+            width: 100hw !important;
+            height: 20% !important;
+            background-color: #4676b5;
+            padding: 2%;
+        }
+
+        body{
+            margin:0% !important;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #logo_div{
+            display: flex;
+            justify-content: center;
+        }
+
+        #footer{
+            width:100hw !important;
+            height: 20% !important;
+            background-color: #4676b5;
+            padding: 2%;
+            color:#fff;
+            display: flex;
+            justify-content: center;
+            bottom: 0;
+            border-radius: 0px;
+        }
+
+        #main_container{
+            min-height:100% !important;
+            position:relative;
+        }
+
+        #action_area{
+            min-height: 65vh !important;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        #member_image{
+            border-radius: 15px;
+        }
+
+        #image_col{
+            margin-left: 3%;
+                text-align: center;
+        }
+
+        .heading_text{
+            color: #215496;
+        }
+
+        #container_box{
+            box-shadow: 4px 7px 15px rgba(8, 8, 8, 0.233);
+            border-radius:15px;
+            padding:5%;
+        }
+        .inquiries {
+    display: inline-flex;
+    padding: 15px 50px;
+    background-color: #333;
+    display: block;
+    color: #fff;
+    margin-top: -20px;
+}
+.inquiries a {
+    color: #fff;
+    margin-left: 15px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="main_container">
+        <div id="header">
+            <div id="logo_div">
+                <img class="img img-responsive text-center m-auto" src="logo.png">
+            </div>
+        </div>
+        <div id="action_area" class="justify-content-center">
+            <div class="row">
+                    <div class="col-md-2 text-center">
+                        <img src="qr.png" width="180">
+                        <p class="text-center">Scan QR Code to verify member</p>
+                    </div>
+
+                    <div class="col-md-3" id="image_col">
+                            <img id="member_image" src="avtar.png" width="165">
+                    </div>
+
+                    <div class="col-md-6">
+                        <h1 id="member_name">Ankit Choudhary</h1>
+                        <h5>Membership ID : 0027</h5>
+                        <hr>
+                        <div id="container_box">
+                                <h2 class="heading_text text-center">Details</h2>
+                                <table class="table table-hover text-center" style="margin-top: 4%;">
+                                        <tbody>
+                                            <tr>
+                                                <td><b>Membership Type</b></td>  
+                                                <td>Anna</td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td><b>Employee ID</b></td>  
+                                                <td>028546</td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td><b>Member Post</b></td>  
+                                                <td>Secretary</td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td><b>Passport</b></td>  
+                                                <td>1545 2658 5456 8565</td>
+                                            </tr>
+                    
+                                            <tr>
+                                                <td><b>Member Validity</b></td>  
+                                                <td>20/08/2020</td>
+                                            </tr>
+                                        </tbody>
+                                </table>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Uncomment this code to view the center aligned details section-->
+            
+            <!-- <hr>
+            <br>
+            <div class="row"> -->
+                <!--Intentionally Left Blank-->
+                <!-- <div class="col-md-3">
+                </div>
+                <div id="contaisner_box"> -->
+                <!--Container Box Start-->
+                <!-- <div class="col-md-6" id="container_box">
+                        <h2 class="heading_text text-center">Details</h2>
+                        <table class="table table-hover text-center" style="margin-top: 4%;">
+                                <tbody>
+                                    <tr>
+                                        <td><b>Membership Type</b></td>  
+                                        <td>Anna</td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td><b>Employee ID</b></td>  
+                                        <td>028546</td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td><b>Member Post</b></td>  
+                                        <td>Secretary</td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td><b>Passport</b></td>  
+                                        <td>1545 2658 5456 8565</td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td><b>Member Validity</b></td>  
+                                        <td>20/08/2020</td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                </div>
+                </div> -->
+                <!--Container Box End-->
+
+                <!--Intentionally Left Blank-->
+                <!-- <div class="col-md-3">
+                </div>
+            </div> -->
+            <!--Row End-->
+            
+
+
+        </div><!--Action Area End-->
+        <div id="footer" class="navbar fixed-bottom">
+            <p class="text-center">© 2019 WFDP Verification. All Rights Reserved. Designed by Ziasy Consulting</p>
+
+        </div>
+        <div class="inquiries">
+            <h4> For inquiries</h4>
+            <ul class="list-inline">
+                <li><img src="envelope.png"><a href="mailto:Info@wfdp-ea.org" target="_top">Info@wfdp-ea.org</li>
+                <li><img src="smartphone.png"><a href="tel:+254 737 383064" target="_top">+254 737 383064</li>          
+            </ul>
+            
+        </div>
+
+    </div>
+</body>
+</html>
